@@ -134,8 +134,4 @@ if(VCPKG_TARGET_IS_WINDOWS)
     endif()
 endif()
 
-if(FEATURES STREQUAL "core")
-    file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
-endif()
-
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/docs/license.rst")
